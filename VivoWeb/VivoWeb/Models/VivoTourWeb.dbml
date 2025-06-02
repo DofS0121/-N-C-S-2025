@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="VivoTourWeb" Class="VivoTourWebDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Table Name="dbo.BookingDetails" Member="BookingDetails">
+    <Type Name="BookingDetail">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tour_id" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="quantity" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Association Name="Booking_BookingDetail" Member="Booking" ThisKey="booking_id" OtherKey="booking_id" Type="Booking" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="Tour_BookingDetail" Member="Tour" ThisKey="tour_id" OtherKey="tour_id" Type="Tour" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Customers" Member="Customers">
+    <Type Name="Customer">
+      <Column Name="customer_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="customer_name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="address" Type="System.String" DbType="NVarChar(100)" CanBeNull="true" />
+      <Column Name="numberphone" Type="System.String" DbType="VarChar(12)" CanBeNull="true" />
+      <Column Name="dob" Type="System.DateTime" DbType="SmallDateTime" CanBeNull="true" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Association Name="User_Customer" Member="User" ThisKey="user_id" OtherKey="user_id" Type="User" IsForeignKey="true" DeleteRule="SET NULL" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bookings" Member="Bookings">
+    <Type Name="Booking">
+      <Column Name="booking_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="customer_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="booking_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="delivery_date" Type="System.DateTime" DbType="Date" CanBeNull="true" />
+      <Column Name="ispayment" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="isship" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="isreceived" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Association Name="Booking_BookingDetail" Member="BookingDetails" ThisKey="booking_id" OtherKey="booking_id" Type="BookingDetail" />
+      <Association Name="Booking_Payment" Member="Payments" ThisKey="booking_id" OtherKey="booking_id" Type="Payment" />
+      <Association Name="User_Booking" Member="User" ThisKey="customer_id" OtherKey="user_id" Type="User" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Payments" Member="Payments">
+    <Type Name="Payment">
+      <Column Name="payment_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="booking_id" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="payment_method" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="amount" Type="System.Decimal" DbType="Decimal(18,2)" CanBeNull="true" />
+      <Column Name="payment_date" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Association Name="Booking_Payment" Member="Booking" ThisKey="booking_id" OtherKey="booking_id" Type="Booking" IsForeignKey="true" DeleteRule="CASCADE" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TourCategories" Member="TourCategories">
+    <Type Name="TourCategory">
+      <Column Name="category_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="category_name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Association Name="TourCategory_Tour" Member="Tours" ThisKey="category_id" OtherKey="category_id" Type="Tour" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Tours" Member="Tours">
+    <Type Name="Tour">
+      <Column Name="tour_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="tour_name" Type="System.String" DbType="NVarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="description" Type="System.String" DbType="NVarChar(MAX)" CanBeNull="true" />
+      <Column Name="price" Type="System.Decimal" DbType="Decimal(18,2) NOT NULL" CanBeNull="false" />
+      <Column Name="image" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="category_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="createdAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="quantity_instock" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="stock_warning" Type="System.Boolean" DbType="Bit" CanBeNull="true" />
+      <Association Name="Tour_BookingDetail" Member="BookingDetails" ThisKey="tour_id" OtherKey="tour_id" Type="BookingDetail" />
+      <Association Name="TourCategory_Tour" Member="TourCategory" ThisKey="category_id" OtherKey="category_id" Type="TourCategory" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+      <Association Name="User_Tour" Member="User" ThisKey="user_id" OtherKey="user_id" Type="User" IsForeignKey="true" DeleteRule="CASCADE" DeleteOnNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Users" Member="Users">
+    <Type Name="User">
+      <Column Name="user_id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="password" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="role" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+      <Column Name="image" Type="System.String" DbType="NVarChar(255)" CanBeNull="true" />
+      <Column Name="createdAt" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Association Name="User_Customer" Member="Customers" ThisKey="user_id" OtherKey="user_id" Type="Customer" />
+      <Association Name="User_Booking" Member="Bookings" ThisKey="user_id" OtherKey="customer_id" Type="Booking" />
+      <Association Name="User_Tour" Member="Tours" ThisKey="user_id" OtherKey="user_id" Type="Tour" />
+    </Type>
+  </Table>
+</Database>
