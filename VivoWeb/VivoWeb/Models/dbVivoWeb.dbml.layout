@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 16.75, 10.25" name="dbVivoWeb">
+  <DataContextMoniker Name="/dbVivoWebDataContext" />
+  <nestedChildShapes>
+    <classShape Id="a93c899d-2f96-41b9-8862-0718cf51ef62" absoluteBounds="14.5, 3.5, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/dbVivoWebDataContext/BookingPassenger" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e19951df-9a6c-4cee-a71b-c219e1afe904" absoluteBounds="14.515, 3.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6afb847c-bee7-4891-8105-382776c9d449" absoluteBounds="11.75, 3.375, 2, 2.9247054036458326">
+      <DataClassMoniker Name="/dbVivoWebDataContext/Booking" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e79d3c11-3deb-4275-96d6-ec13058c19a2" absoluteBounds="11.765, 3.835, 1.9700000000000002, 2.364705403645833" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="aeb4372e-b7ca-4d6e-b223-6f715aaf1ee7" absoluteBounds="3.5, 4, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbVivoWebDataContext/Location" />
+      <nestedChildShapes>
+        <elementListCompartment Id="42e0efc7-a777-4d89-8fcd-ca1a5876f1b7" absoluteBounds="3.515, 4.46, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c5d5c8be-3870-40da-8f7d-d6108af58a34" absoluteBounds="0.75, 6.5, 2, 2.1554996744791657">
+      <DataClassMoniker Name="/dbVivoWebDataContext/New" />
+      <nestedChildShapes>
+        <elementListCompartment Id="0a91a2c9-9d6d-4da7-a1aa-04b7812f37ed" absoluteBounds="0.765, 6.96, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="32ff8d1d-241a-4208-ade6-1d64e9556495" absoluteBounds="9, 0.75, 2, 2.1554996744791666">
+      <DataClassMoniker Name="/dbVivoWebDataContext/Review" />
+      <nestedChildShapes>
+        <elementListCompartment Id="f6b6fce1-e5a1-4809-bb21-9200d25c6ff3" absoluteBounds="9.015, 1.21, 1.9700000000000002, 1.5954996744791665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="8bd125ef-1be0-4b72-9eb1-8c3d8c4bf421" absoluteBounds="0.75, 4.25, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbVivoWebDataContext/TourCategory" />
+      <nestedChildShapes>
+        <elementListCompartment Id="badd55b7-4e44-427d-95b9-050459da70aa" absoluteBounds="0.765, 4.71, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="169cdb1f-c27e-4262-9374-1dbc346599d9" absoluteBounds="6.25, 3.5, 2, 2.5401025390625005">
+      <DataClassMoniker Name="/dbVivoWebDataContext/Tour" />
+      <nestedChildShapes>
+        <elementListCompartment Id="10a2754c-a370-433b-9d23-07018e04c276" absoluteBounds="6.265, 3.96, 1.9700000000000002, 1.9801025390625" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="c1d91a7e-06f2-4adf-8e29-679ff57ae0b8" absoluteBounds="9, 4, 2, 1.7708968098958326">
+      <DataClassMoniker Name="/dbVivoWebDataContext/TourSchedule" />
+      <nestedChildShapes>
+        <elementListCompartment Id="dba15338-87ac-4337-b5a1-52e46f7d5295" absoluteBounds="9.015, 4.46, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="cd470bd3-4a7b-4aba-b6f6-9243418c3f69" absoluteBounds="6.25, 7.25, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/dbVivoWebDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9376a105-9dc0-4193-859f-f1b0f0b3eeb2" absoluteBounds="6.265, 7.71, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(13.75 : 4.77005126953125); (14.5 : 4.77005126953125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbVivoWebDataContext/Booking/Booking_BookingPassenger" />
+      <nodes>
+        <classShapeMoniker Id="6afb847c-bee7-4891-8105-382776c9d449" />
+        <classShapeMoniker Id="a93c899d-2f96-41b9-8862-0718cf51ef62" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.84699625651042); (3.5 : 4.84699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbVivoWebDataContext/TourCategory/TourCategory_Location" />
+      <nodes>
+        <classShapeMoniker Id="8bd125ef-1be0-4b72-9eb1-8c3d8c4bf421" />
+        <classShapeMoniker Id="aeb4372e-b7ca-4d6e-b223-6f715aaf1ee7" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(7.25 : 3.5); (7.25 : 1.82774983723958); (9 : 1.82774983723958)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbVivoWebDataContext/Tour/Tour_Review" />
+      <nodes>
+        <classShapeMoniker Id="169cdb1f-c27e-4262-9374-1dbc346599d9" />
+        <classShapeMoniker Id="32ff8d1d-241a-4208-ade6-1d64e9556495" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 4.78929768880208); (6.25 : 4.78929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbVivoWebDataContext/Location/Location_Tour" />
+      <nodes>
+        <classShapeMoniker Id="aeb4372e-b7ca-4d6e-b223-6f715aaf1ee7" />
+        <classShapeMoniker Id="169cdb1f-c27e-4262-9374-1dbc346599d9" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(11 : 4.88544840494792); (11.75 : 4.88544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbVivoWebDataContext/TourSchedule/TourSchedule_Booking" />
+      <nodes>
+        <classShapeMoniker Id="c1d91a7e-06f2-4adf-8e29-679ff57ae0b8" />
+        <classShapeMoniker Id="6afb847c-bee7-4891-8105-382776c9d449" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 4.88544840494792); (8.54166666666667 : 4.88544840494792 : JumpStart); (8.70833333333333 : 4.88544840494792 : JumpEnd); (9 : 4.88544840494792)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbVivoWebDataContext/Tour/Tour_TourSchedule" />
+      <nodes>
+        <classShapeMoniker Id="169cdb1f-c27e-4262-9374-1dbc346599d9" />
+        <classShapeMoniker Id="c1d91a7e-06f2-4adf-8e29-679ff57ae0b8" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 8.61620198567708); (12.75 : 8.61620198567708); (12.75 : 6.29970540364583)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbVivoWebDataContext/User/User_Booking" />
+      <nodes>
+        <classShapeMoniker Id="cd470bd3-4a7b-4aba-b6f6-9243418c3f69" />
+        <classShapeMoniker Id="6afb847c-bee7-4891-8105-382776c9d449" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(8.25 : 7.25); (8.625 : 6.875); (8.625 : 2.39787675585937); (9 : 2.39787675585937)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbVivoWebDataContext/User/User_Review" />
+      <nodes>
+        <classShapeMoniker Id="cd470bd3-4a7b-4aba-b6f6-9243418c3f69" />
+        <classShapeMoniker Id="32ff8d1d-241a-4208-ade6-1d64e9556495" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<!-- Banner Carousel -->
+<!-- Carousel Banner -->
 <div id="tourCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
@@ -33,15 +33,213 @@
         {
             <div class="col-md-4 mb-4">
                 <div class="card shadow-sm h-100">
-                    <img src="~/Images/@tour.image" class="card-img-top" alt="@tour.tour_name" style="height: 220px; object-fit: cover;">
+                    <img src="~/Images/@tour.ImageUrl" class="card-img-top" alt="@tour.Name" style="height: 220px; object-fit: cover;">
                     <div class="card-body d-flex flex-column">
-                        <h5 class="card-title text-primary">@tour.tour_name</h5>
-                        <p class="card-text mb-2"><strong>Giá:</strong> @String.Format("{0:N0} VNĐ", tour.price)</p>
-                        <a href="@Url.Action("Details", "Tour", new { id = tour.tour_id })" class="btn btn-outline-primary mt-auto">Xem chi tiết</a>
+                        <h5 class="card-title text-primary">@tour.Name</h5>
+                        <p class="card-text mb-2"><strong>Giá:</strong> @String.Format("{0:N0} VNĐ", tour.Price)</p>
+                        <a href="@Url.Action("Details", "ToursList", new { id = tour.TourId })" class="btn btn-outline-primary mt-auto">Xem chi tiết</a>
                     </div>
                 </div>
             </div>
         }
     </div>
 </div>
+<!-- Category Tabs -->
+<div class="category-tabs">
+    <div class="category-tab active">Du lịch trong nước</div>
+    <div class="category-tab">Du lịch quốc tế</div>
+    <div class="tab-underline" id="underline"></div>
+    
+</div>
 
+<!-- Location Grid -->
+<div class="container mb-5">
+    <div id="location-grid" class="row g-4">
+        <!-- Render hình tại đây bằng JavaScript -->
+    </div>
+</div>
+
+<!-- CSS -->
+<style>
+    .category-tabs {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        position: relative;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #ccc;
+    }
+
+    .category-tab {
+        font-weight: 600;
+        font-size: 20px;
+        cursor: pointer;
+        padding-bottom: 10px;
+        color: #333;
+    }
+
+        .category-tab.active {
+            color: #0d6efd;
+        }
+
+    .tab-underline {
+        position: absolute;
+        bottom: 0;
+        height: 3px;
+        background-color: #0d6efd;
+        transition: left 0.3s ease, width 0.3s ease;
+    }
+
+    .location-card {
+        position: relative;
+        overflow: hidden;
+        border-radius: 12px;
+        cursor: pointer;
+        background-color: #000;
+    }
+
+        .location-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .location-card:hover img {
+            transform: scale(1.05);
+        }
+
+    .location-overlay {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0));
+        padding: 12px;
+        text-align: center;
+    }
+
+    .location-name {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .btn-discover {
+        margin-top: 6px;
+        padding: 6px 14px;
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    .location-card:hover .btn-discover {
+        opacity: 1;
+    }
+
+    .location-card.large {
+        height: 100%;
+        min-height: 410px;
+    }
+
+    .location-card.small {
+        height: 200px;
+    }
+</style>
+
+
+<!-- JavaScript -->
+<script>
+    const tabs = document.querySelectorAll('.category-tab');
+    const underline = document.getElementById('underline');
+    const locationGrid = document.getElementById('location-grid');
+    const allLocations = @Html.Raw(ViewBag.LocationsJson ?? "[]");
+
+    let currentIndex = 0;
+    let intervalId;
+
+    function moveUnderline(index) {
+        const tab = tabs[index];
+        underline.style.width = `${tab.offsetWidth}px`;
+        underline.style.left = `${tab.offsetLeft}px`;
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+    }
+
+    function renderLocations(categoryId) {
+        const filtered = allLocations.filter(l => l.CategoryId === categoryId);
+        locationGrid.innerHTML = '';
+
+        if (filtered.length < 6) {
+            locationGrid.innerHTML = '<div class="col-12 text-center text-muted">Chưa có đủ dữ liệu để hiển thị.</div>';
+            return;
+        }
+
+        locationGrid.innerHTML = `
+            <div class="col-lg-6">
+                <div class="location-card large">
+                    <img src="${filtered[0].ImageUrl}" alt="${filtered[0].Name}">
+                    <div class="location-overlay">
+                        <div class="location-name">${filtered[0].Name.toUpperCase()}</div>
+                        <a href="/ToursList/List?locationId=${filtered[0].LocationId}" class="btn btn-primary btn-sm btn-discover">Khám phá</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 d-flex flex-column gap-3">
+                ${[1, 2].map(i => `
+                    <div class="location-card small">
+                        <img src="${filtered[i].ImageUrl}" alt="${filtered[i].Name}">
+                        <div class="location-overlay">
+                            <div class="location-name">${filtered[i].Name.toUpperCase()}</div>
+                              <a href="/ToursList/List?locationId=${filtered[i].LocationId}" class="btn btn-primary btn-sm btn-discover">Khám phá</a>
+                        </div>
+                    </div>`).join('')}
+            </div>
+            ${[3, 4, 5].map(i => `
+                <div class="col-lg-4">
+                    <div class="location-card small">
+                        <img src="${filtered[i].ImageUrl}" alt="${filtered[i].Name}">
+                        <div class="location-overlay">
+                            <div class="location-name">${filtered[i].Name.toUpperCase()}</div>
+                              <a href="/ToursList/List?locationId=${filtered[i].LocationId}" class="btn btn-primary btn-sm btn-discover">Khám phá</a>
+                        </div>
+                    </div>
+                </div>`).join('')}
+        `;
+    }
+
+    function switchTab(index) {
+        currentIndex = index;
+        moveUnderline(index);
+        renderLocations(index === 0 ? 1 : 2); // 1: trong nước, 2: quốc tế
+    }
+
+    function autoSwitchTabs() {
+        currentIndex = (currentIndex + 1) % tabs.length;
+        switchTab(currentIndex);
+    }
+
+    function startAutoSwitching() {
+        intervalId = setInterval(autoSwitchTabs, 5000);
+    }
+
+    function resetAutoSwitching() {
+        clearInterval(intervalId);
+        startAutoSwitching();
+    }
+
+    tabs.forEach((tab, index) => {
+        tab.addEventListener('click', () => {
+            switchTab(index);
+            resetAutoSwitching();
+        });
+    });
+
+    window.addEventListener('load', () => {
+        switchTab(currentIndex);
+        startAutoSwitching();
+    });
+
+    window.addEventListener('resize', () => {
+        moveUnderline(currentIndex);
+    });
+</script>

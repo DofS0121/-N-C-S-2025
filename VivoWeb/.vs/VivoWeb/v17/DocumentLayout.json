@@ -1,38 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\",
+  "WorkspaceRootPath": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\vivoweb\\views\\tour\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\vivoweb\\vivoweb\\models\\dbvivoweb.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\models\\dbvivoweb.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\views\\tour\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\views\\tour\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\vivoweb\\vivoweb\\views\\tour\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\views\\tour\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\vivoweb\\vivoweb\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\controllers\\bookingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\vivoweb\\vivoweb\\models\\vivotourweb.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|",
-      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\models\\vivotourweb.dbml||{B465B5AD-8799-4507-B90A-EE29ACF36AF9}|"
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\vivoweb\\vivoweb\\controllers\\tourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\vivoweb\\vivoweb\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\controllers\\tourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\controllers\\tourcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\vivoweb\\vivoweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\vivoweb\\vivoweb\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\models\\profileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\vivoweb\\vivoweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\views\\tourslist\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\views\\tourslist\\list.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\vivoweb\\vivoweb\\views\\tour\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF_2\\vivoweb\\vivoweb\\views\\user\\customerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\views\\user\\customerprofile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\controllers\\tourslistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\controllers\\tourslistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\views\\tourslist\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\views\\tourslist\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\models\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\models\\paymentviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\models\\bookingviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\views\\booking\\book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\views\\booking\\book.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\views\\tour\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\views\\tour\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|e:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\vivoweb\\vivoweb\\models\\vivotourweb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\models\\vivotourweb.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\views\\tour\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\views\\tour\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\app_start\\bundleconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\models\\tourdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\models\\tourdetailviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\app_start\\filterconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\global.asax.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\vivoweb\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
+      "RelativeMoniker": "D:0:0:{0BBB9F4A-5DBD-487E-B90C-3CA853C3AECE}|VivoWeb\\VivoWeb.csproj|solutionrelative:vivoweb\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,113 +110,334 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\Tour\\Index.cshtml",
+              "RelativeDocumentMoniker": "VivoWeb\\Views\\Tour\\Index.cshtml",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\Tour\\Index.cshtml",
+              "RelativeToolTip": "VivoWeb\\Views\\Tour\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEEAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T06:23:34.111Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dbVivoWeb.dbml",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\dbVivoWeb.dbml",
+              "RelativeDocumentMoniker": "VivoWeb\\Models\\dbVivoWeb.dbml",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\dbVivoWeb.dbml",
+              "RelativeToolTip": "VivoWeb\\Models\\dbVivoWeb.dbml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
+              "WhenOpened": "2025-06-29T16:35:19.043Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "VivoWeb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "VivoWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T17:47:42.683Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "VivoWeb\\Controllers\\HomeController.cs",
-              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "VivoWeb\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\UserController.cs",
+              "RelativeToolTip": "VivoWeb\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T17:05:36.777Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Views\\Tour\\Register.cshtml",
-              "RelativeDocumentMoniker": "VivoWeb\\Views\\Tour\\Register.cshtml",
-              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Views\\Tour\\Register.cshtml",
-              "RelativeToolTip": "VivoWeb\\Views\\Tour\\Register.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAB0AAABZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T16:51:19.372Z",
+              "WhenOpened": "2025-06-29T16:15:35.242Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "TourController.cs",
-              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Controllers\\TourController.cs",
-              "RelativeDocumentMoniker": "VivoWeb\\Controllers\\TourController.cs",
-              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Controllers\\TourController.cs",
-              "RelativeToolTip": "VivoWeb\\Controllers\\TourController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAUAAAAAAAAAA==",
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Controllers\\PaymentController.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "VivoWeb\\Controllers\\PaymentController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T14:29:43.541Z",
+              "WhenOpened": "2025-06-29T06:54:21.789Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "VivoTourWeb.dbml",
-              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Models\\VivoTourWeb.dbml",
-              "RelativeDocumentMoniker": "VivoWeb\\Models\\VivoTourWeb.dbml",
-              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Models\\VivoTourWeb.dbml",
-              "RelativeToolTip": "VivoWeb\\Models\\VivoTourWeb.dbml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001722|",
-              "WhenOpened": "2025-06-02T16:27:18.237Z",
+              "Title": "BookingController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\BookingController.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Controllers\\BookingController.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\BookingController.cs",
+              "RelativeToolTip": "VivoWeb\\Controllers\\BookingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T12:06:11.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Views\\Tour\\Login.cshtml",
-              "RelativeDocumentMoniker": "VivoWeb\\Views\\Tour\\Login.cshtml",
-              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Views\\Tour\\Login.cshtml",
-              "RelativeToolTip": "VivoWeb\\Views\\Tour\\Login.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "CustomerProfile.cshtml",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\User\\CustomerProfile.cshtml",
+              "RelativeDocumentMoniker": "VivoWeb\\Views\\User\\CustomerProfile.cshtml",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\User\\CustomerProfile.cshtml",
+              "RelativeToolTip": "VivoWeb\\Views\\User\\CustomerProfile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-06-02T17:16:40.581Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Views\\Tour\\Index.cshtml",
-              "RelativeDocumentMoniker": "VivoWeb\\Views\\Tour\\Index.cshtml",
-              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Views\\Tour\\Index.cshtml",
-              "RelativeToolTip": "VivoWeb\\Views\\Tour\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-05-29T14:33:09.355Z",
+              "WhenOpened": "2025-06-29T16:24:57.336Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "VivoTourWeb.designer.cs",
-              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Models\\VivoTourWeb.designer.cs",
-              "RelativeDocumentMoniker": "VivoWeb\\Models\\VivoTourWeb.designer.cs",
-              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE\\VivoWeb\\VivoWeb\\Models\\VivoTourWeb.designer.cs",
-              "RelativeToolTip": "VivoWeb\\Models\\VivoTourWeb.designer.cs",
-              "ViewState": "AgIAADwAAAAAAAAAAAAiwEwAAAAPAAAAAAAAAA==",
+              "Title": "List.cshtml",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\ToursList\\List.cshtml",
+              "RelativeDocumentMoniker": "VivoWeb\\Views\\ToursList\\List.cshtml",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\ToursList\\List.cshtml",
+              "RelativeToolTip": "VivoWeb\\Views\\ToursList\\List.cshtml",
+              "ViewState": "AgIAAJkAAAAAAAAAAAASwFYAAABqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T09:46:28.609Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TourController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\TourController.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Controllers\\TourController.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\TourController.cs",
+              "RelativeToolTip": "VivoWeb\\Controllers\\TourController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-02T16:28:56.239Z",
+              "WhenOpened": "2025-06-27T06:26:11.69Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProfileViewModel.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\ProfileViewModel.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Models\\ProfileViewModel.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\ProfileViewModel.cs",
+              "RelativeToolTip": "VivoWeb\\Models\\ProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T16:23:58.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\ToursList\\Detail.cshtml",
+              "RelativeDocumentMoniker": "VivoWeb\\Views\\ToursList\\Detail.cshtml",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\ToursList\\Detail.cshtml",
+              "RelativeToolTip": "VivoWeb\\Views\\ToursList\\Detail.cshtml",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAAAGUAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-22T07:07:15.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ToursListController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\ToursListController.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Controllers\\ToursListController.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\ToursListController.cs",
+              "RelativeToolTip": "VivoWeb\\Controllers\\ToursListController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAQwAwAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T09:07:05.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\Tour\\Login.cshtml",
+              "RelativeDocumentMoniker": "VivoWeb\\Views\\Tour\\Login.cshtml",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\Tour\\Login.cshtml",
+              "RelativeToolTip": "VivoWeb\\Views\\Tour\\Login.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-20T06:23:46.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PaymentViewModel.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\PaymentViewModel.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Models\\PaymentViewModel.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\PaymentViewModel.cs",
+              "RelativeToolTip": "VivoWeb\\Models\\PaymentViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T06:57:55.461Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Book.cshtml",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\Booking\\Book.cshtml",
+              "RelativeDocumentMoniker": "VivoWeb\\Views\\Booking\\Book.cshtml",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\Booking\\Book.cshtml",
+              "RelativeToolTip": "VivoWeb\\Views\\Booking\\Book.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-26T12:12:07.43Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BookingViewModel.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\BookingViewModel.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Models\\BookingViewModel.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\BookingViewModel.cs",
+              "RelativeToolTip": "VivoWeb\\Models\\BookingViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-26T12:52:44.582Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\Tour\\Register.cshtml",
+              "RelativeDocumentMoniker": "VivoWeb\\Views\\Tour\\Register.cshtml",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Views\\Tour\\Register.cshtml",
+              "RelativeToolTip": "VivoWeb\\Views\\Tour\\Register.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-21T12:22:47.439Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Controllers\\HomeController.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "VivoWeb\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T07:54:35.567Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BundleConfig.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\App_Start\\BundleConfig.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\App_Start\\BundleConfig.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\App_Start\\BundleConfig.cs",
+              "RelativeToolTip": "VivoWeb\\App_Start\\BundleConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T12:40:04.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TourDetailViewModel.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\TourDetailViewModel.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Models\\TourDetailViewModel.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Models\\TourDetailViewModel.cs",
+              "RelativeToolTip": "VivoWeb\\Models\\TourDetailViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-06T16:39:56.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Web.config",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Web.config",
+              "RelativeDocumentMoniker": "VivoWeb\\Web.config",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Web.config",
+              "RelativeToolTip": "VivoWeb\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-20T16:47:01.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "FilterConfig.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\App_Start\\FilterConfig.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\App_Start\\FilterConfig.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\App_Start\\FilterConfig.cs",
+              "RelativeToolTip": "VivoWeb\\App_Start\\FilterConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T12:40:05.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RouteConfig.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\App_Start\\RouteConfig.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\App_Start\\RouteConfig.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\App_Start\\RouteConfig.cs",
+              "RelativeToolTip": "VivoWeb\\App_Start\\RouteConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T03:40:49.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Global.asax.cs",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Global.asax.cs",
+              "RelativeDocumentMoniker": "VivoWeb\\Global.asax.cs",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\Global.asax.cs",
+              "RelativeToolTip": "VivoWeb\\Global.asax.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T16:46:57.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "favicon.ico -  [English (United States)] - Icon [16x16, 32 bit, BMP]",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\favicon.ico",
+              "RelativeDocumentMoniker": "VivoWeb\\favicon.ico",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\favicon.ico -  [English (United States)] - Icon [16x16, 32 bit, BMP]",
+              "RelativeToolTip": "VivoWeb\\favicon.ico -  [English (United States)] - Icon [16x16, 32 bit, BMP]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-06-20T16:46:55.902Z",
+              "EditorCaption": " -  [English (United States)] - Icon [16x16, 32 bit, BMP]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "packages.config",
+              "DocumentMoniker": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\packages.config",
+              "RelativeDocumentMoniker": "VivoWeb\\packages.config",
+              "ToolTip": "E:\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\\u0110\u1ED2 \u00C1N C\u01A0 S\u1EDE_2\\VivoWeb\\VivoWeb\\packages.config",
+              "RelativeToolTip": "VivoWeb\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-06-20T16:46:59.616Z",
               "EditorCaption": ""
             }
           ]

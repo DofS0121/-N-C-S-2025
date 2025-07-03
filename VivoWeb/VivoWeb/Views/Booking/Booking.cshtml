@@ -1,0 +1,217 @@
+﻿@model VivoWeb.Models.BookingViewModel
+@{
+    Layout = null;
+}
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<div class="container mt-5 mb-5">
+    <h3 class="text-primary fw-bold mb-4">Lịch Trình và Giá Tour</h3>
+
+    <!-- Chọn lịch trình -->
+    <div class="mb-4">
+        <label class="form-label">Chọn Lịch Trình:</label>
+        <div class="btn-group">
+            @foreach (var schedule in Model.Schedules)
+            {
+                <input type="radio" class="btn-check" name="ScheduleId" id="schedule-@schedule.ScheduleId"
+                       value="@schedule.ScheduleId"
+                       data-seats="@schedule.AvailableSeats"
+                       data-startdate="@schedule.StartDate.ToString("yyyy-MM-dd")"
+                       @(schedule == Model.Schedules.First() ? "checked" : "") />
+                <label class="btn btn-outline-primary" for="schedule-@schedule.ScheduleId">
+                    @schedule.StartDate.ToString("dd/MM/yyyy")
+                </label>
+            }
+        </div>
+    </div>
+
+    <!-- Số lượng và giá -->
+    <div class="mb-4">
+        @{
+            var passengerGroups = new[] {
+                ("Người lớn", "adults", "> 10 tuổi"),
+                ("Trẻ em", "children", "2 - 10 tuổi"),
+                ("Trẻ nhỏ", "infants", "< 2 tuổi")
+            };
+        }
+
+        @foreach (var group in passengerGroups)
+        {
+            <div class="border rounded p-3 mb-2 d-flex justify-content-between align-items-center">
+                <div>
+                    <div class="fw-semibold">@group.Item1</div>
+                    <div class="text-muted"><small>@group.Item3</small></div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <div class="text-danger fw-bold me-3" id="@group.Item2.Replace("infants", "infant").Replace("children", "child").Replace("adults", "adult") + " Price""></div>
+                    <button type="button" class="btn btn-outline-secondary btn-sm" onclick="changeCount('@group.Item2', -1)">-</button>
+                    <input type="number" id="@group.Item2" name="@group.Item2" value="@(group.Item2 == "adults" ? 1 : 0)" min="0" class="form-control text-center mx-2" style="width:60px;" />
+                    <button type="button" class="btn btn-outline-secondary btn-sm" onclick="changeCount('@group.Item2', 1)">+</button>
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Tổng giá và chỗ trống -->
+    <div class="mt-3 d-flex justify-content-between align-items-center">
+        <div class="text-muted">
+            <strong>Còn lại:</strong> <span id="availableSeats">@Model.Schedules.First().AvailableSeats</span> chỗ
+        </div>
+        <div class="fs-5 fw-bold text-danger">
+            Tổng Giá Tour: <span id="totalPrice">@String.Format("{0:N0} đ", Model.Price)</span>
+        </div>
+    </div>
+
+    <hr class="my-4" />
+
+    <!-- Form -->
+    <form method="post" action="/Booking/Submit">
+        <input type="hidden" name="ScheduleId" id="ScheduleIdHidden" />
+        <input type="hidden" name="TravelDate" id="TravelDate" />
+        <input type="hidden" name="Total" id="Total" />
+        <input type="hidden" name="NumberOfPeople" id="NumberOfPeople" />
+
+        <h4 class="fw-bold mb-3">Thông tin khách hàng</h4>
+        <div class="row g-3">
+            <div class="col-md-6">
+                <label class="form-label">Họ tên *</label>
+                <input type="text" class="form-control" name="CustomerFullName" required />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Điện thoại *</label>
+                <input type="tel" class="form-control" name="CustomerPhone" required />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Email *</label>
+                <input type="email" class="form-control" name="CustomerEmail" required />
+            </div>
+            <div class="col-md-6">
+                <label class="form-label">Địa chỉ</label>
+                <input type="text" class="form-control" name="CustomerAddress" />
+            </div>
+        </div>
+
+        <hr class="my-4" />
+        <h5 class="fw-bold mb-3">Thông tin hành khách</h5>
+        <div id="passengerList"></div>
+
+        <div class="mt-4 text-end">
+            <button type="submit" class="btn btn-success px-5 py-2 fw-semibold rounded-pill">Thanh Toán</button>
+        </div>
+    </form>
+</div>
+
+<!-- JavaScript xử lý -->
+<script>
+    const basePrice = @Model.Price;
+    const childRate = 0.6;
+    const infantRate = 0.1;
+
+    function getTotalPassengers() {
+        return ['adults', 'children', 'infants'].reduce((sum, id) => sum + (parseInt(document.getElementById(id).value) || 0), 0);
+    }
+
+    function changeCount(id, delta) {
+        const input = document.getElementById(id);
+        let value = parseInt(input.value) || 0;
+        const max = parseInt(document.getElementById("availableSeats").innerText);
+
+        // Giới hạn tổng số hành khách không vượt quá số ghế còn lại
+        if (delta > 0 && getTotalPassengers() >= max) return;
+
+        value = Math.max(0, value + delta);
+        input.value = value;
+
+        updateTotal();
+        renderPassengers();
+    }
+
+    function updateTotal() {
+        const adults = parseInt(document.getElementById("adults").value) || 0;
+        const children = parseInt(document.getElementById("children").value) || 0;
+        const infants = parseInt(document.getElementById("infants").value) || 0;
+
+        const total = adults * basePrice + children * basePrice * childRate + infants * basePrice * infantRate;
+
+        // Cập nhật giá hiển thị
+        document.getElementById("adultPrice").innerText = `x ${basePrice.toLocaleString('vi-VN')} đ`;
+        document.getElementById("childPrice").innerText = `x ${(basePrice * childRate).toLocaleString('vi-VN')} đ`;
+        document.getElementById("infantPrice").innerText = `x ${(basePrice * infantRate).toLocaleString('vi-VN')} đ`;
+        document.getElementById("totalPrice").innerText = total.toLocaleString('vi-VN') + " đ";
+
+        // Gán giá trị vào input ẩn để gửi về server
+        document.getElementById("Total").value = total;
+        document.getElementById("NumberOfPeople").value = adults + children + infants;
+    }
+
+    function updateSeatsAndHidden() {
+        const selected = document.querySelector('input[name="ScheduleId"]:checked');
+        if (selected) {
+            const seats = selected.dataset.seats;
+            const startDate = selected.dataset.startdate;
+
+            document.getElementById("availableSeats").innerText = seats;
+            document.getElementById("ScheduleIdHidden").value = selected.value;
+            document.getElementById("TravelDate").value = startDate;
+
+            updateTotal();
+            renderPassengers();
+        }
+    }
+
+    function renderPassengerCard(index, type) {
+        return `
+        <div class="card mb-3 shadow-sm">
+            <div class="card-body">
+                <h6 class="card-title fw-bold mb-3">Hành khách ${index + 1} - ${type}</h6>
+                <div class="row g-3">
+                    <div class="col-md-6"><label class="form-label">Họ tên</label>
+                        <input type="text" name="Passengers[${index}].FullName" class="form-control" required />
+                    </div>
+                    <div class="col-md-3"><label class="form-label">Giới tính</label>
+                        <select name="Passengers[${index}].Gender" class="form-select">
+                            <option value="Nam">Nam</option><option value="Nữ">Nữ</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3"><label class="form-label">Ngày sinh</label>
+                        <input type="date" name="Passengers[${index}].DateOfBirth" class="form-control" required />
+                    </div>
+                    <div class="col-md-4"><label class="form-label">Loại</label>
+                        <input type="text" class="form-control" name="Passengers[${index}].PassengerType" value="${type}" readonly />
+                    </div>
+                    <div class="col-md-4"><label class="form-label">Quốc tịch</label>
+                        <input type="text" name="Passengers[${index}].Nationality" class="form-control" />
+                    </div>
+                    <div class="col-12"><label class="form-label">Ghi chú</label>
+                        <textarea name="Passengers[${index}].Note" class="form-control" rows="2"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        `;
+    }
+
+    function renderPassengers() {
+        const container = document.getElementById("passengerList");
+        container.innerHTML = '';
+        let index = 0;
+        [['adults', 'Người lớn'], ['children', 'Trẻ em'], ['infants', 'Trẻ nhỏ']].forEach(([id, label]) => {
+            const count = parseInt(document.getElementById(id).value) || 0;
+            for (let i = 0; i < count; i++) {
+                container.innerHTML += renderPassengerCard(index++, label);
+            }
+        });
+    }
+
+    window.onload = function () {
+        updateSeatsAndHidden();
+        renderPassengers();
+
+        // Bắt sự kiện thay đổi radio button lịch trình
+        document.querySelectorAll('input[name="ScheduleId"]').forEach(e => {
+            e.addEventListener('change', updateSeatsAndHidden);
+        });
+    };
+</script>
+

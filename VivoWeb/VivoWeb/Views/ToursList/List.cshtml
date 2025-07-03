@@ -1,0 +1,199 @@
+﻿@model PagedList.IPagedList<VivoWeb.Models.Tour>
+@using PagedList;
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "List";
+
+
+    string currentSearch = Request.QueryString["searchTerm"];
+    int? currentLocationId = null;
+    int parsedId;
+
+    if (int.TryParse(Request.QueryString["locationId"], out parsedId))
+    {
+        currentLocationId = parsedId;
+    }
+
+    var foreignLocations = ViewBag.ForeignLocations as List<VivoWeb.Models.Location>;
+    var domesticLocations = ViewBag.DomesticLocations as List<VivoWeb.Models.Location>;
+}
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Sidebar -->
+        <div class="col-lg-3 mb-4">
+            <div class="sidebar-box">
+                <h5 class="fw-bold text-dark"> Tour HOT Nước Ngoài</h5>
+                <ul>
+                    @if (foreignLocations != null)
+                    {
+                        foreach (var loc in foreignLocations)
+                        {
+                            <li>
+                                <a href="@Url.Action("List", "ToursList", new { locationId = loc.LocationId })"
+                                   class="@(currentLocationId == loc.LocationId ? "text-primary fw-semibold" : "")">
+                                    <i class="bi bi-geo-alt-fill me-1"></i> @loc.Name
+                                </a>
+                            </li>
+                        }
+                    }
+                    <li><a href="#" class="text-primary small"><i class="bi bi-caret-down-fill"></i> Xem thêm</a></li>
+                </ul>
+
+                <h5 class="fw-bold text-dark mt-4"> Tour HOT Trong Nước</h5>
+                <ul>
+                    @if (domesticLocations != null)
+                    {
+                        foreach (var loc in domesticLocations)
+                        {
+                            <li>
+                                <a href="@Url.Action("List", "ToursList", new { locationId = loc.LocationId })"
+                                   class="@(currentLocationId == loc.LocationId ? "text-primary fw-semibold" : "")">
+                                    <i class="bi bi-geo-alt-fill me-1"></i> @loc.Name
+                                </a>
+                            </li>
+                        }
+                        <li><a href="#" class="text-primary small"><i class="bi bi-caret-down-fill"></i> Xem thêm</a></li>
+                    }
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main content -->
+        <div class="col-lg-9">
+            <h2 class="mb-4 text-primary text-center">Danh sách Tour</h2>
+
+            @if (!string.IsNullOrEmpty(ViewBag.Message))
+            {
+                <div class="alert alert-info">@ViewBag.Message</div>
+            }
+
+            @foreach (var tour in Model)
+            {
+                <div class="card mb-4 shadow-sm">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="@Url.Content("~/Images/" + tour.ImageUrl)" class="img-fluid h-100 rounded-start" alt="@tour.Name" style="object-fit: cover;">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body d-flex flex-column h-100">
+                                <h5 class="card-title">@tour.Name</h5>
+                                <div class="text-muted small mb-2">
+                                    <i class="bi bi-clock me-1"></i> @tour.Duration |
+                                 
+                                </div>
+                                <p class="text-danger fw-bold fs-5">@String.Format("{0:N0} đ", tour.Price)</p>
+                                <div class="mt-auto">
+                                    <a href="@Url.Action("Detail", "ToursList", new { id = tour.TourId })"
+                                       class="btn btn-warning text-white fw-bold">Xem Tour</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+            <!-- Phân trang -->
+            @if (Model.PageCount > 1)
+            {
+                <div class="d-flex justify-content-center mt-4">
+                    @Html.PagedListPager(Model, page => Url.Action("List", new
+                    {
+                        page,
+                        searchTerm = currentSearch,
+                        locationId = currentLocationId
+                    }),
+                    new PagedListRenderOptions
+                    {
+                        Display = PagedListDisplayMode.IfNeeded,
+                        DisplayLinkToPreviousPage = PagedListDisplayMode.Always,
+                        DisplayLinkToNextPage = PagedListDisplayMode.Always,
+                        DisplayLinkToFirstPage = PagedListDisplayMode.Always,
+                        DisplayLinkToLastPage = PagedListDisplayMode.Always,
+                        UlElementClasses = new[] { "pagination", "justify-content-center" },
+                        LiElementClasses = new[] { "page-item" },
+                        FunctionToTransformEachPageLink = (li, a) =>
+                        {
+                            a.AddCssClass("page-link");
+                            return a;
+                        }
+                    })
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<style>
+    /* SIDEBAR CSS */
+    .sidebar-box {
+        background: #fff;
+        border: 1px solid #dee2e6;
+        padding: 1.5rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+        .sidebar-box h5 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 0.5rem;
+        }
+
+        .sidebar-box ul {
+            padding-left: 0;
+            list-style: none;
+        }
+
+            .sidebar-box ul li a {
+                color: #343a40;
+                text-decoration: none;
+                display: block;
+                padding: 5px 0;
+                transition: color 0.2s;
+            }
+
+                .sidebar-box ul li a:hover,
+                .sidebar-box ul li a.text-primary {
+                    color: #0d6efd;
+                    font-weight: 600;
+                }
+
+    /* TOUR CARD */
+    .card {
+        border-radius: 12px;
+        border: 1px solid #e0e0e0;
+        overflow: hidden;
+        transition: all 0.3s;
+    }
+
+        .card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .card .card-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .card .btn {
+            border-radius: 30px;
+            font-size: 0.9rem;
+            padding: 0.5rem 1.5rem;
+        }
+
+    /* PHÂN TRANG */
+    .pagination .page-item .page-link {
+        color: #0d6efd;
+        font-weight: 500;
+        margin: 0 2px;
+        border-radius: 6px;
+    }
+
+        .pagination .page-item.active .page-link,
+        .pagination .page-item .page-link:hover {
+            background-color: #0d6efd;
+            color: #fff;
+            border-color: #0d6efd;
+        }
+</style>
